@@ -17,4 +17,8 @@ public class Utils {
         return (Math.abs(a - b)) < EPSILON;
     }
 
+    public static double clamp(double val, double min, double max) {
+        return Math.max(Math.min(val, max), min);
+    }
+
 }

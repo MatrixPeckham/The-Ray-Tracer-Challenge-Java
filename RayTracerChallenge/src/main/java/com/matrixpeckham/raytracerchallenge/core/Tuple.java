@@ -29,7 +29,7 @@ public class Tuple {
     }
 
     public boolean isPoint() {
-        return doubleEquals(w, 1.0);
+        return !isVector();
     }
 
     public boolean isVector() {

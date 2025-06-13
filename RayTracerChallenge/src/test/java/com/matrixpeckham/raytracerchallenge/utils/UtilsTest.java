@@ -59,4 +59,31 @@ public class UtilsTest {
         assertEquals(expResult, result);
     }
 
+    @Test
+    public void testClampMid() {
+        double a = 0.5;
+        double min = 0;
+        double max = 1;
+        double result = Utils.clamp(a, min, max);
+        assertEquals(a, result, Utils.EPSILON);
+    }
+
+    @Test
+    public void testClampMax() {
+        double a = 1.5;
+        double min = 0;
+        double max = 1;
+        double result = Utils.clamp(a, min, max);
+        assertEquals(max, result, Utils.EPSILON);
+    }
+
+    @Test
+    public void testClampMin() {
+        double a = -0.5;
+        double min = 0;
+        double max = 1;
+        double result = Utils.clamp(a, min, max);
+        assertEquals(min, result, Utils.EPSILON);
+    }
+
 }
