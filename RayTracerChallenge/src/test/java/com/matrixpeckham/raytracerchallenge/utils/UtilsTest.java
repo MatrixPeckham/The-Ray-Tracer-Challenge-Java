@@ -41,7 +41,6 @@ public class UtilsTest {
 
     @Test
     public void testDoubleEqualsDiv() {
-        System.out.println("doubleEquals");
         double a = 0.33333;
         double b = 1.0 / 3.0;
         boolean expResult = true;
@@ -51,7 +50,6 @@ public class UtilsTest {
 
     @Test
     public void testDoubleEqualsDivFalse() {
-        System.out.println("doubleEquals");
         double a = 0.33333;
         double b = 1.0 / 4.0;
         boolean expResult = false;
